@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sharp: #7228e0;
+  --dark: #0b0d2e;
+  --medium: #202242;
+  --gray-light: #515691;
+  --pink-text:#9185df;
+  --pink:#d69ccd;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
