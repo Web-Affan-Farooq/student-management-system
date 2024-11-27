@@ -5,7 +5,7 @@ import React, { useState, createContext } from "react";
 export let OptionContext = createContext(null);
 
 const OptionContextProvider = ({children}) => {
-    const [option, setoption] = useState("Dashboard");
+    const [option, setoption] = useState("");
 
     return (
         <OptionContext.Provider value={{option, setoption}}>

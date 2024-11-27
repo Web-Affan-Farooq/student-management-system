@@ -12,7 +12,7 @@ const Sidenav = () => {
         <div className='flex flex-row flex-nowrap gap-3'>
             <div className='w-[45px] h-[45px] rounded-full bg-sharp'></div>
             <div>
-                <h1 className='text-white text-2xl font-bold'>Admin Panel</h1>
+                <h1 className='text-white text-2xl font-bold'>Student Panel</h1>
                 <p className='text-[13px] text-pinktext'>Student management system</p>
             </div>
         </div>

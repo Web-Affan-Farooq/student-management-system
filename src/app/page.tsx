@@ -1,22 +1,12 @@
-import React from "react";
-import Sidenav from "@/components/Sidenav/Sidenav";
-import Topnav from "@/components/Topnav/Topnav";
-import Calender from "@/components/Calender/Calender";
+import Welcome from '@/components/Welcome/Welcome'
+import React from 'react'
 
-const Home = () => {
+const Home = () => {  
   return (
-    <div className="p-3 h-[100vh] bg-dark">
-      <div className="flex flex-row flex-wrap justify-between items-center">
-        <Sidenav />
-        <div>
-          <Topnav/>
-          <div className="flex flex-row flex-wrap">
-            <Calender/>
-          </div>
-        </div>
-      </div>
+    <div className='p-3 bg-custom_1 w-full h-[120vh]'>
+        <Welcome/>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
