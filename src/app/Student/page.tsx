@@ -1,6 +1,6 @@
 import React from 'react';
-import Topnav from '@/components/Topnav/Topnav';
-import Sidenav from '@/components/Sidenav/Sidenav-student';
+import Sidenav from '@/components/Student/Sidenav-student';
+import Topnav from '@/components/Student/Topnav';
 
 const Student = () => {
   return (

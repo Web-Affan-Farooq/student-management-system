@@ -9,7 +9,7 @@ const NewTeacher = () => {
   };
 
   return (
-    <main>
+    <main className='bg-custom_1 w-full h-screen'>
       <article>
         <section>
         <form action="/Teacher" className='text-white flex flex-col flex-nowrap gap-5 justify-center items-center w-full h-screen'>

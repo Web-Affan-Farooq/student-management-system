@@ -2,7 +2,7 @@ import React from 'react'
 
 const StudentLogin = () => {
   return (
-    <main>
+    <main className='bg-custom_1 w-full h-screen'>
     <article>
       <section>
       <form action="/Student" className='text-white flex flex-col flex-nowrap gap-5 justify-center items-center w-full h-screen'>

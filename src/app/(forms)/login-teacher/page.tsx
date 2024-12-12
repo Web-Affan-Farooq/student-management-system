@@ -2,7 +2,7 @@ import React from 'react'
 
 const TeacherLogin = () => {
   return (
-    <main>
+    <main className='bg-custom_1 w-full h-screen'>
     <article>
       <section>
       <form action="/Teacher" className='text-white flex flex-col flex-nowrap gap-5 justify-center items-center w-full h-screen'>
@@ -36,4 +36,4 @@ const TeacherLogin = () => {
   </main>  )
 }
 
-export default TeacherLogin
+export default TeacherLogin;

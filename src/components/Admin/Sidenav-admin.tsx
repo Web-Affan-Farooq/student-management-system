@@ -16,20 +16,11 @@ const Sidenav = () => {
     // const [nav, setnav] = useState(navState?.navStatus); // ignore this error
     let nav = navState?.navStatus; // false
 
-    // useEffect(() => {
-    //     nav = !nav;
-    //     console.log(nav);
-    //     console.log("side nav effect");
-        
-    // },[navState?.navStatus]); // ignore this error
-
 
 
     // options interactivity
     const handleOptions = (e:React.MouseEvent<HTMLDivElement>) => {
         navState?.setnavStatus(!navState?.navStatus);
-        // console.log(navState?.navStatus);
-        // console.log(e.currentTarget.innerText);
         optionState?.setoption(e.currentTarget.innerText); // updating the context but not showing it
     }
     console.log(optionState);
@@ -70,27 +61,27 @@ const Sidenav = () => {
 
         <div className='text-left p-3 bg-graylight rounded-lg text-[15px] font-bold' onClick={handleOptions}>
             <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
-            <i className="fa-solid fa-comments"></i><span>Chat</span>
+            <i className="fa-solid fa-comments"></i><span>Chats</span>
             </div>
         </div>
 
         <div className='text-left p-3 bg-graylight rounded-lg text-[15px] font-bold' onClick={handleOptions}>
             <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
-            <i className="fa-solid fa-users"></i> <span>Teachers</span>
+            <i className="fa-solid fa-users"></i> <span>Events</span>
             </div>
         </div>
 
         <div className='text-left p-3 bg-graylight rounded-lg text-[15px] font-bold' onClick={handleOptions}>
             <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
-            <i className="fa-solid fa-graduation-cap"></i> <span>Student</span>
+            <i className="fa-solid fa-graduation-cap"></i> <span>Profiles</span>
             </div>
         </div>
 
-        <div className='text-left p-3 bg-graylight rounded-lg text-[15px] font-bold' onClick={handleOptions}>
+        {/* <div className='text-left p-3 bg-graylight rounded-lg text-[15px] font-bold' onClick={handleOptions}>
             <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
             <i className="fa-solid fa-calendar"></i> <span>Events</span>
             </div>
-        </div>
+        </div> */}
 
         <h2 className='text-white font-bold'>
             Main menu
@@ -103,7 +94,7 @@ const Sidenav = () => {
         
         <div className='text-left p-3 bg-graylight rounded-lg text-[15px] font-bold' onClick={handleOptions}>
             <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
-            <i className="fa-solid fa-utensils"></i> <span>Foods</span>                 </div>
+            <i className="fa-solid fa-utensils"></i> <span>Preveledges</span>                 </div>
         </div>
         <div className='text-left p-3 bg-graylight rounded-lg text-[15px] font-bold' onClick={handleOptions}>
             <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
