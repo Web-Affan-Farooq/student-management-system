@@ -2,7 +2,12 @@ Design:
 
 Design and develop home page --completed 
 Design and develop login page for teacher student --completed 
-Design and develop home page --completed 
+Design and develop nav components for admin --completed 
+Design and develop top nav for admin --completed 
+Design and develop side messaging section which should be shown on side on dashboard section for admin --completed 
+design and develop events section for admin and previous events are shown and create new even button on top of that section  the card should contain
+design and develop Finances  section 
+design and develop chats section with group sction interface
 
 Implementations:
 
