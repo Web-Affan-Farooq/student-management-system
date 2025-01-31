@@ -1,10 +1,11 @@
 "use client";
 import React, {useContext, useState } from 'react';
-import {OptionContext} from '@/context/option-context';
+// import {OptionContext} from '@/context/option-context';
+import { OptionContext } from '@/context/OptionContext';
 import Image from 'next/image';
 
 const Sidenav = () => {
-    const optionState = useContext(OptionContext);
+    const [option, setOption] = useContext(OptionContext);
 
   return (
     <div className='px-6 py-3 h-[95vh] box-border rounded-2xl w-[300px] max-xl:p-4 max-md:p-2 bg-black flex flex-col flex-nowrap gap-[25px]'>

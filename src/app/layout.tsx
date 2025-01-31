@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import OptionContextProvider from "@/context/option-context";
-import NavContextProvider from "@/context/navcontext";
+// import OptionContextProvider from "@/context/option-context";
+// import NavContextProvider from "@/context/navcontext";
+import NavContextProvider from "@/context/Navcontext";
+import OptionContextProvider from "@/context/OptionContext";
 import "./globals.css";
 
 export const metadata: Metadata = {

@@ -3,7 +3,8 @@
 import React, { useContext, useState } from 'react';
 import Sidenav from '@/components/Admin/Sidenav-admin';
 import Topnav from '@/components/Admin/Topnav';
-import { OptionContext } from '@/context/option-context';
+// import { OptionContext } from '@/context/option-context';
+import { OptionContext } from '@/context/OptionContext';
 
 
 // importing components that needes to be attached to main pages
@@ -16,38 +17,38 @@ import Finances from '@/components/Admin/Finances/Finances';
 import Settings from '@/components/Admin/Settings/Settings';
 
 const Admin = () => {
-const option = useContext(OptionContext);
+const [option, setOption] = useContext(OptionContext);
 
 const [component, setComponent] = useState<React.ReactElement>();  // state for storing component
 
-if(option?.option === "Dashboard") {
-  console.log(option?.option);  // ignore this error
+if(option === "Dashboard") {
+  console.log(option); 
   setComponent(<Dashboard/>)
 }
-else if(option?.option === "Chats") {
-  console.log(option?.option); // ignore this error
+else if(option === "Chats") {
+  console.log(option); 
   setComponent(<Chats/>)
 }
-else if(option?.option === "Events") {
-  console.log(option?.option); // ignore this error
+else if(option === "Events") {
+  console.log(option); 
 setComponent(<Events/>)
 }
-else if(option?.option === "Profiles") {
-  console.log(option?.option); // ignore this error
+else if(option === "Profiles") {
+  console.log(option); 
   setComponent(<Profiles/>)
 
 }
-else if(option?.option === "Finances") {
-  console.log(option?.option); // ignore this error
+else if(option === "Finances") {
+  console.log(option); 
   setComponent(<Finances/>)
 
 }
-else if(option?.option === "Settings") {
-  console.log(option?.option); // ignore this error
+else if(option === "Settings") {
+  console.log(option); 
   setComponent(<Settings/>)
 }
-else if(option?.option === "Preveledges") {
-  console.log(option?.option); // ignore this error
+else if(option === "Preveledges") {
+  console.log(option); 
 setComponent(<Preveledges/>)
 
 }else {
