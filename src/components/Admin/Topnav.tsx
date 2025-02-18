@@ -1,12 +1,12 @@
 "use client";
 import React, { useContext, useEffect } from "react";
-import { NavContext } from "@/context/navcontext";
+import { NavContext } from "@/context/Navcontext";
 
 const Topnav = () => {
-  let navState = useContext(NavContext);
+  let [navState, setNavState] = useContext(NavContext);
   
   const handleNav = () => {
-    navState?.setnavStatus(!navState?.navStatus); // ignore this error
+    setNavState(!navState); // ignore this error
     // console.log(navState?.navStatus); // ignore this error
   };
 

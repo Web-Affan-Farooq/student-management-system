@@ -1,29 +1,30 @@
 "use client";
 import React, {useContext, useEffect, useState } from 'react';
-import { NavContext } from '@/context/navcontext';
-import { OptionContext } from '@/context/option-context';
+// import { NavContext } from '@/context/navcontext';
+import { OptionContext } from '@/context/OptionContext';
 import Image from 'next/image';
+import { NavContext } from '@/context/Navcontext';
 
 const Sidenav = () => {
 
     // options logic
 
-    let optionState = useContext(OptionContext);
+    let [option , setOption]= useContext(OptionContext);
 
 
     // nav logic
-    let navState = useContext(NavContext); // consuming context;
+    let [navState, setNavState] = useContext(NavContext); // consuming context;
     // const [nav, setnav] = useState(navState?.navStatus); // ignore this error
-    let nav = navState?.navStatus; // false
+    let nav = navState; // false
 
 
 
     // options interactivity
     const handleOptions = (e:React.MouseEvent<HTMLDivElement>) => {
-        navState?.setnavStatus(!navState?.navStatus);
-        optionState?.setoption(e.currentTarget.innerText); // updating the context but not showing it
+        setNavState(navState);
+        setOption(e.currentTarget.innerText); // updating the context but not showing it
     }
-    console.log(optionState);
+    console.log(option);
 
 
     //max-[920px]:${nav? "hidden": "flex"} max-[920px]:absolute
