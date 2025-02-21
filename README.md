@@ -1,13 +1,113 @@
+# Student mnaagement system:
+
+## Operations And Roles :
+ To create a student management system which have three layer.
+ - Admin (Person owning this application)
+ - Teacher 
+ - Student
+
+ ### For adding Teacher :
+ The admin have a teacher signup form for teacher that he sends to teacher and teacher create its account for teaching in online sessions. Once signup and account creation completed successfully , the notification is pushed on the admin's dashboard that a new teacher signup.
+
+ ### For Adding Students :
+ The admin have a specific form for students in which students have to create thier account . Once account can be created, the student continue operations to dashboard .Once signup and account creation completed successfully , the notification is pushed on the admin's dashboard that a new teacher signup.
+
+ ### Admin login : 
+ For admin login, create a new small app which contains fields for email and password .    
+
+<!--______Technical implementation______-->
+
+ ## Technical implementation :
+ For starting the development , Create a design for student management system portal 
+
+ ### Design Home Page :
+ Design a home page for student management system . This page normally contains buttons for login and sign up for teachers and students .
+
+### Development Of Admin Login Form :
+Create a basic app that contains form fields for admin login
+
+#### Notes:
+- Create a saparate nextjs application
+- Attach form components from shadcn to the home page for email and password.
+- save credentials like email and password in a .env file of this application and on the form , verify them.
+- if login sucessfull, redirects the admin to admin's dashboard .
+
+ ### Login Page For Both Teacher And Students:
+ Create a design of login page of teacher and students. Both have similar fields as follows:
+ - user name
+ - email
+ - password
+ 
+ After logging in , the user have to be redirected to its corresponding dashboard
+
+ ### Signup Page For Teachers :
+ Create a design for signup page that contains :
+ name:
+ email:
+ password:
+ phonenumber:
+ subject :
+ batch :
+Once the signup completed successfully, the teacher is redirected to it's corresponding dashboard
+
+ ### Signup Page For Student :
+  Create a design for signup page that contains follownig fields:
+  name:
+  email
+  password
+  courses
+  batch
+  a profile picture (optional)
+
+## Dashboards :
+
+### Admin :
+
+#### Components :
+- A collapsible , responsive sidenav
+- Animated options in side nav
+- A responsive top nav
+- Sidenav collapsing icon in top nav
+- Profile option of admin
+- a Profile sectionappears when selecting profile option in sidenav
+
+#### Functionalities :
+- To be added soon ...
+
+### Teacher :  
+#### Components :
+- A collapsible , responsive sidenav
+- Animated options in side nav
+- A responsive top nav
+- Sidenav collapsing icon in top nav
+- Profile option of admin
+- a Profile sectionappears when selecting profile option in sidenav
+
+#### Functionalities :
+- To be added soon ...
+
+### Student :
+#### Components :
+- A collapsible , responsive sidenav
+- Animated options in side nav
+- A responsive top nav
+- Sidenav collapsing icon in top nav
+- Profile option of admin
+- a Profile sectionappears when selecting profile option in sidenav
+
+#### Functionalities :
+- To be added soon ...
+
 # Design:
 
-Design and develop home page --completed 
-Design and develop login page for teacher student --completed 
-Design and develop nav components for admin --completed 
-Design and develop top nav for admin --completed 
-Design and develop side messaging section which should be shown on side on dashboard section for admin --completed 
-design and develop events section for admin and previous events are shown and create new even button on top of that section  the card should contain
-design and develop Finances  section 
-design and develop chats section with group sction interface
+
+
+
+- Design and develop top nav for admin --completed 
+- Design and develop side messaging section which should be shown on side on dashboard section for admin --completed 
+- design and develop events section for admin and previous events are shown and create new even button on top of that section  the card should contain
+- design and develop Finances  section 
+- design and develop chats section with group sction interface
 
 Implementations:
 
