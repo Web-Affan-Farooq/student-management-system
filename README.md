@@ -1,16 +1,16 @@
-# Student mnaagement system:
+# Student management system:
 
 ## Operations And Roles :
  To create a student management system which have three layer.
  - Admin (Person owning this application)
  - Teacher 
- - Student
+ - Student 
 
  ### For adding Teacher :
- The admin have a teacher signup form for teacher that he sends to teacher and teacher create its account for teaching in online sessions. Once signup and account creation completed successfully , the notification is pushed on the admin's dashboard that a new teacher signup.
+ The admin have a teacher signup form for teacher that he sends to teacher and teacher create its account for teaching in online sessions. Once signup and account creation completed successfully , a new entry of teacher account is to be created in database. Assign a unique 8 figure teacher id to account that should be used for teacher login. The notification is pushed on the admin's dashboard for new teacher signup. An confirmation email is pushed on the teachers gmail account that contains signup info and login credentials used for login . 
 
  ### For Adding Students :
- The admin have a specific form for students in which students have to create thier account . Once account can be created, the student continue operations to dashboard .Once signup and account creation completed successfully , the notification is pushed on the admin's dashboard that a new teacher signup.
+ The admin have a specific form for students in which students have to create thier account . Once account can be created, the student continue operations to dashboard .Once signup and account creation completed successfully , a new entry of student is to be created is database and assign a student roll number , the notification is pushed on the admin's dashboard for a new student signup.
 
  ### Admin login : 
  For admin login, create a new small app which contains fields for email and password .    
@@ -20,7 +20,13 @@
  ## Technical implementation :
  For starting the development , Create a design for student management system portal 
 
- ### Design Home Page :
+ - For designing , utilize this [figma template](https://www.figma.com/design/Pr5CNtENrhOBujNM6JUXrQ/student-management-system?node-id=0-1&p=f&t=nniHylVKiPPP8vu7-0)
+ - Using NextJS for main meta framework for application. 
+ - TailwindCSS and corresponding libraries for styling.
+ - For databas e. appwrite is used   
+ - Use resend email for email sending api and react email
+
+ ### Design Home Page : (completed)
  Design a home page for student management system . This page normally contains buttons for login and sign up for teachers and students .
 
 ### Development Of Admin Login Form :
@@ -32,28 +38,36 @@ Create a basic app that contains form fields for admin login
 - save credentials like email and password in a .env file of this application and on the form , verify them.
 - if login sucessfull, redirects the admin to admin's dashboard .
 
- ### Login Page For Both Teacher And Students:
- Create a design of login page of teacher and students. Both have similar fields as follows:
- - user name
+ ### Login Page Design For Teacher : (completed)
+ Create a design of login page of teacher . Both have similar fields as follows:
+ - Teacher id:
  - email
  - password
  
  After logging in , the user have to be redirected to its corresponding dashboard
 
- ### Signup Page For Teachers :
+ ### Login Page Design For Students : (completed)
+ Create a design of login page of teacher . Both have similar fields as follows:
+ - Roll number
+ - email
+ - password
+ 
+ After logging in , the user have to be redirected to its corresponding dashboard
+
+ ### Signup Page Design For Teachers : (completed)
  Create a design for signup page that contains :
  name:
- email:
+ email: (only gmail)
  password:
  phonenumber:
  subject :
  batch :
 Once the signup completed successfully, the teacher is redirected to it's corresponding dashboard
 
- ### Signup Page For Student :
+ ### Signup Page Design For Student : (completed)
   Create a design for signup page that contains follownig fields:
   name:
-  email
+ email: (only gmail)
   password
   courses
   batch

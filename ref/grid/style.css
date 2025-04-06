@@ -1,0 +1,123 @@
+body {
+    padding: 0;margin: 0;box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.grid {
+    display: grid;
+    padding: 10px;
+    grid-template-rows: repeat(7, calc(100vh / 7));
+    grid-template-columns: repeat(9,calc(100vw / 9));
+    column-gap: 0px;
+    row-gap: 10px;
+}
+.sidebar {
+    background-color: purple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: calc(100vh - 20px);
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.topnav {
+    background-color: green;
+    grid-column-start: 5;
+    grid-column-end: 10;
+}
+
+@media (min-width:1500px) and (max-width:2000px) {
+    .sidebar {
+        background-color: purple;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: calc(100vh - 20px);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:1499px) and (min-width:1200px) {
+    .sidebar {
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: calc(100vh - 20px);
+        border-radius: 10px;
+    }
+}
+@media (max-width:1199px) and (min-width:900px) {
+    .sidebar {
+        background-color: green;
+        /* width: 300px; */
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: calc(100vh - 20px);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:899px) and (min-width:768px) {
+    .sidebar {
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: calc(100vh - 20px);
+        border-radius: 10px;
+    }
+    .topnav {
+        background-color: green;
+        grid-column-start: 4;
+        grid-column-end: 10;
+    }
+    
+}
+@media (max-width:767px) and (min-width:600px) {
+    .sidebar {
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: calc(100vh - 20px);
+        border-radius: 10px;
+    }
+
+    .topnav {
+        background-color: green;
+        grid-column-start: 4;
+        grid-column-end: 10;
+    }
+}
+@keyframes animate-sidebar {
+    0% {
+        transform:translate(-120vw)
+    }
+    100% {
+        transform:translate(0)
+    }
+}
+@media (max-width:599px) and (min-width:200px) {
+    .sidebar {
+        background-color: black;
+        /* grid-column-start: 1; */
+        /* grid-column-end: 2; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 70vw;
+        height: calc(100vh - 20px);
+        border-radius: 10px;
+
+        animation-name: animate-sidebar;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .topnav {
+        background-color: green;
+        grid-column-start: 3;
+        grid-column-end: 10;
+    }
+}
+/*
+On screens having width smaller than 900px and greater than 768px, the sidebar must be shown half with icons only 
+*/

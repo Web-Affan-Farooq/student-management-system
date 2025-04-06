@@ -5,11 +5,12 @@ const NewStudent = () => {
     <main className='bg-custom_1 w-full h-screen'>
       <article>
         <section>
-        <form action="/Student" className='text-white flex flex-col flex-nowrap gap-5 justify-center items-center w-full h-screen'>
+        <form action="/Student" className='text-white w-full h-screen'>
         <div>
-            <h1 className='text-center text-white font-bold text-[34px]'>Student Enrollment Form</h1>
+            {/* <h1 className='text-left text-white font-bold text-[34px]'>Create Account :</h1> */}
           </div>
           <fieldset className='bg-[rgba(255,255,255,0.1)] flex flex-col flex-nowrap rounded-lg px-[20px] py-[50px] gap-6 w-[600px] justify-center items-center max-md:w-[400px] max-sm:w-[90vw]'>
+
             <label htmlFor="Your name" id='student-name'>
               <input type="text" name='studentName' id='student-name' required placeholder='Enter your name' className='px-[20px] py-[10px] bg-dark w-[300px] rounded-md
               '/>
