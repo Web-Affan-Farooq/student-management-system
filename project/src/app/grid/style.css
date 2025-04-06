@@ -1,0 +1,13 @@
+.container {
+    border: 2px solid yellow;
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(10, calc(100vw / 5));
+    grid-template-rows:repeat(5,calc(100vh / 5));
+}
+.items {
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
