@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --sharp: #7228e0;
@@ -11,22 +9,27 @@
   --gray-light: #515691;
   --pink-text:#9185df;
   --pink:#d69ccd;
-  --shadow-sharp: 0px 0px 100px 50px var(--sharp)
+  --background:#2117d4;
+  --link:#60c5db;
+  --custom-gradient:'radial-gradient(#080363,#000)';
 }
+
+@theme inline {
+  --color-sharp:var(--sharp);
+  --color-dark:var(--dark);
+  --color-medium:var(--medium);
+  --color-gray-light:var(--gray-light);
+  --color-pink-text:var(--pink-text);
+  --color-pink:var(--pink);
+  --color-background:var(--background);
+  --color-link:var(--link);
+
+  --background-blue-gradient:var(--custom-gradient);
+
+  --shadow-dark:0px 0px 90px 10px var(--link);
+  --shadow-sharp: 0px 0px 80px 15px var(--sharp)
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
