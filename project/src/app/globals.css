@@ -27,7 +27,9 @@
   --background-blue-gradient:var(--custom-gradient);
 
   --shadow-dark:0px 0px 90px 10px var(--link);
-  --shadow-sharp: 0px 0px 80px 15px var(--sharp)
+  --shadow-sharp: 0px 0px 80px 15px var(--sharp);
+
+  --breakpoint-mid:950px;
 }
 
 * {
