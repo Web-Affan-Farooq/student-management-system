@@ -1,15 +1,89 @@
 "use client";
+
+import "./style.css"
 import Image from "next/image";
 import Link from "next/link";
-import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 import clsx from "clsx";
 
+/* Importing Hooks */
+import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
-/* Importing book icon  */
-import Book from "../../../public/icons/components/Book";
+/* Importing custom icon components */
+import Book from "../../../public/icons/Sidebar/Book";
+import People from "../../../public/icons/Sidebar/People";
+import Chats from "../../../public/icons/Sidebar/Chats";
+import Events from "../../../public/icons/Sidebar/Events";
+import Announcements from "../../../public/icons/Sidebar/Announcements";
+import Settings from "../../../public/icons/Sidebar/Settings";
+
+const ManipulateLink = () => {
+    /* Manipulate options on sidebar */
+    const links: any = {
+        "Main menu": [
+            {
+                name: "Coursework",
+                link: "/example",
+                icon: <Book className="group-hover:text-white text-gray-light" />
+            },
+            {
+                name: "People",
+                link: "/example/people",
+                icon: <People className="group-hover:text-white text-gray-light" />
+            },
+            {
+                name: "Chats",
+                link: "/example",
+                icon: <Chats className="group-hover:text-white text-gray-light" />
+            },
+            {
+                name: "Events",
+                link: "/example",
+                icon: <Events className="group-hover:text-white text-gray-light" />
+            },
+            {
+                name: "Announcements",
+                link: "/example",
+                icon: <Announcements className="group-hover:text-white text-gray-light" />
+            },
+        ],
+        "Account": [
+            {
+                name: "Settings",
+                link: "/example",
+                icon: <Settings className="group-hover:text-white text-gray-light" />
+            },
+        ]
+    }
+
+    const keys = Object.keys(links);
+
+    return keys.map((category, index) => {
+        return (
+            <div key={index}>
+                <h2 className='text-white font-bold'>{category}</h2>
+                <br/>
+                <div className='flex flex-col flex-nowrap justify-start items-start gap-5'>
+                    {
+                        links[category].map((link:any,idx:number) => {
+                            return <Link href={link.link} className='w-full' key={idx}>
+                            <div className={`group transition-all duration-100 ease-in-out text-left p-3 bg-[rgba(34,33,54,0.9)] hover:bg-sharp hover:shadow-sharp rounded-lg text-[15px] font-bold`}>
+                                <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
+                                    {link.icon}<span className='group-hover:text-white'>{link.name}</span>
+                                </div>
+                            </div>
+                        </Link>
+                        })
+                    }
+                </div>
+            </div>
+        )
+    })
+}
 
 const Sidebar = () => {
+    /* Main sidebar component */
     const { sidebarVisibility } = useSidebarVisibility();
+
     return (
         //Sidebar
         /*
@@ -20,7 +94,7 @@ const Sidebar = () => {
              */
 
         /*max-md:absolute max-md:left-0 max-md:w-[82vw] max-xl:p-4  */
-        <div className={clsx(`z-10 bg-black transition-all duration-400 ease-in-out py-[40px] px-[20px] w-[300px] text-white h-[100vh] overflow-y-scroll box-border rounded-2xl max-mid:absolute max-mid:top-0 max-mid:left-0 max-mid:w-[80vw] flex flex-col flex-nowrap gap-[20px]`, {
+        <div className={clsx(`scroll-container z-10 bg-black transition-all duration-400 ease-in-out py-[40px] px-[20px] w-[300px] text-white h-[100vh] overflow-y-scroll box-border rounded-2xl max-mid:absolute max-mid:top-0 max-mid:left-0 max-mid:w-[80vw] flex flex-col flex-nowrap gap-[20px]`, {
             "-translate-x-[120vw]": sidebarVisibility,
             "translate-x-0": !sidebarVisibility
         })}>
@@ -44,57 +118,7 @@ const Sidebar = () => {
                     <p className='text-[13px] text-gray-400'>Admin</p>
                 </div>
             </div>
-
-            {/** ___child-3 */}
-            <h2 className='text-white font-bold'>
-                Main menu</h2>
-            {/** ___child-4 */}
-            <div className='flex flex-col flex-nowrap justify-start items-start gap-5'>
-                <Link href={"/example"} className='w-full'>
-                    <div className={`group transition-all duration-100 ease-in-out text-left p-3 bg-[rgba(34,33,54,0.9)] hover:bg-sharp hover:shadow-sharp rounded-lg text-[15px] font-bold`}>
-                        <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
-                            <Book className="group-hover:text-white text-gray-light" /><span className='group-hover:text-white'>Coursework</span>
-                        </div>
-                    </div>
-                </Link>
-                {
-                    [
-                        {
-                            name: "Dashboard",
-                            icon: "dashboard.svg",
-                            link: "/example",
-                        },
-                        {
-                            name: "Chats",
-                            icon: "chats.svg",
-                            link: "/example",
-                        },
-                        {
-                            name: "Events",
-                            icon: "events.svg",
-                            link: "/example",
-                        },
-                        {
-                            name: "Announcements",
-                            icon: "announcements.svg",
-                            link: "/example",
-                        }
-                    ].map(({ name, icon, link }: { name: string; icon: string; link: string }, index: number) => {
-                        return <Link href={link} className='w-full' key={index} onClick={() => {
-
-                        }}>
-                            <div className={`group transition-all duration-100 ease-in-out text-left p-3 bg-[rgba(34,33,54,0.9)] hover:bg-sharp hover:shadow-sharp rounded-lg text-[15px] font-bold`}>
-                                <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
-                                    <Image src={`/icons/${icon}`} alt='Dashboard' width={24} height={24} /><span className='group-hover:text-white'>{name}</span>
-                                </div>
-                            </div>
-                        </Link>
-                    }
-                    )
-                }
-
-            </div>
-            
+            <ManipulateLink/>
         </div>
     )
 }
