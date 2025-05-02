@@ -17,6 +17,7 @@ import Announcements from "../../../public/icons/Sidebar/Announcements";
 import Settings from "../../../public/icons/Sidebar/Settings";
 
 const ManipulateLink = () => {
+    const {sidebarVisibility, updateSidebarVisibility} = useSidebarVisibility();
     /* Manipulate options on sidebar */
     const links: any = {
         "Main menu": [
@@ -65,7 +66,9 @@ const ManipulateLink = () => {
                 <div className='flex flex-col flex-nowrap justify-start items-start gap-5'>
                     {
                         links[category].map((link:any,idx:number) => {
-                            return <Link href={link.link} className='w-full' key={idx}>
+                            return <Link href={link.link} className='w-full' key={idx} onClick={() => {
+                                updateSidebarVisibility();
+                            }}>
                             <div className={`group transition-all duration-100 ease-in-out text-left p-3 bg-[rgba(34,33,54,0.9)] hover:bg-sharp hover:shadow-sharp rounded-lg text-[15px] font-bold`}>
                                 <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
                                     {link.icon}<span className='group-hover:text-white'>{link.name}</span>
