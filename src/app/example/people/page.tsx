@@ -9,14 +9,15 @@ import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 /* Importing important components ... */
 import Sidebar from "../Sidebar";
 
+/* Create dynamic users profile page with this design    https://dribbble.com/shots/17859331-Momentz-Social-Media-App */
 
+/* avatar  badge  tooltip*/
 const Card = () => {
     return (
-        <div className="flex items-center gap-4 p-4 bg-dark w-70 rounded-md shadow-md border border-white/10">
+        <div className="flex items-center gap-4 px-[30px] py-3 bg-dark w-full rounded-md shadow-md border border-white/10">
 
             {/* Profile Image */}
-            <div className="relative flex-shrink-0">
-                <span className="absolute bottom-0 right-2 w-3 h-3 bg-green-400 rounded-full"></span>
+            <div className="flex-shrink-0">
                 <div className="rounded-full w-[60px] h-[60px] overflow-hidden border-2 border-white/20">
                     <Image
                         src="/images/person-2.jpg"
@@ -29,16 +30,24 @@ const Card = () => {
             </div>
 
             {/* Profile Info */}
-            <div className="flex-1 min-w-0">
-                <h4 className="text-white text-md font-bold leading-tight">Muhammad Affan</h4>
+
+
+
+            <div className="flex flex-col justify-center items-start min-w-0">
+                {/* <div className="relative flex flex-row flex-nowrap justify-center items-center gap-[10px]">
+                <h4 className="text-white text-md font-bold leading-tight truncate">Mdfu ifuiods ff dsfidsopfi ad Affan</h4>
+                <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                </div> */}
+                <div className="relative flex flex-row flex-nowrap justify-center items-center gap-[10px] min-w-0 w-full">
+                    <h4 className="text-white text-md font-bold leading-tight truncate w-0 flex-grow">
+                        Mdfu ifuiods ff dsfidsopfi ad Affan
+                    </h4>
+                    <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                </div>
+
                 <p className="text-sm text-pink-text break-words">@muhammad_affan</p>
             </div>
 
-            {/* Action or Status (Optional) */}
-            <div>
-                {/* Example: a status dot or icon */}
-                <span className="inline-block w-3 h-3 bg-green-400 rounded-full"></span>
-            </div>
         </div>
     );
 };
@@ -75,19 +84,19 @@ const Home = () => {
                     <h1 className="font-bold text-[25px] flex flex-row flex-nowrap justify-start items-center">
                         <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} /><span>People</span>
                     </h1>
-                    <div className="py-[60px] bg-medium flex flex-row flex-wrap justify-center items-center gap-[20px]">
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
+                    <div className="border-2 border-solid border-white">
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
                     </div>
 
                 </div>

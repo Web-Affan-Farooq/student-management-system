@@ -1,3 +1,6 @@
+//_____ tailwindcss old theme 
+
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -12,7 +15,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        sharp:"#7228e0",
+        sharp:"#733FEB",
         dark:"#0b0d2e",
         medium:"#202242",
         graylight: "#515691",
@@ -37,7 +40,8 @@ export default {
       }
       , 
       boxShadow : {
-        dark:"0px 0px 90px 10px #60c5db"
+        dark:"0px 0px 90px 10px #60c5db",
+        sharp: "0px 0px 100px 20px #733FEB"
       }
     },
   },

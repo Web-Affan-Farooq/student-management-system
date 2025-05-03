@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidenav from '@/components/Student/Sidenav-student';
+import Sidenav from '@/components/Student/sidenav';
 import Topnav from '@/components/Student/Topnav';
 
 const Student = () => {

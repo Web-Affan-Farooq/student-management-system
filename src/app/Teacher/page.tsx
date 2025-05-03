@@ -1,10 +1,6 @@
 import React from 'react';
-// import Topnav from '@/components/Topnav/Topnav';
-// import Sidenav from '@/components/Sidenav/Sidenav-teacher';
-
 import Topnav from '@/components/Teacher/Topnav';
-import Sidenav from '@/components/Teacher/Sidenav-teacher';
-
+import Sidenav from '@/components/Teacher/sidenav';
 
 const Teacher = () => {
   return (
@@ -21,4 +17,4 @@ const Teacher = () => {
     </div>  )
 }
 
-export default Teacher
+export default Teacher;
