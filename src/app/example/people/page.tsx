@@ -19,7 +19,7 @@ const Card = () => {
 
             {/* Profile Image */}
             <div className="flex-shrink-0">
-                <div className="rounded-full w-[50px] h-[50px] overflow-hidden border-2 border-white/20">
+                <div className="rounded-full w-[50px] h-[50px] overflow-hidden">
                     <Image
                         src="/images/person-2.jpg"
                         alt="Muhammad Affan"
@@ -82,7 +82,7 @@ const Home = () => {
                 {/* Options Content */}
 
                 <div className="bg-black h-screen p-6 rounded-lg ">
-                    <div className="flex flex-row max-sm:flex-col max-sm:items-start justify-between items-center">
+                    <div className="flex flex-row flex-wrap justify-between items-center">
 
                         <div className="text-[25px] font-bold flex flex-row flex-nowrap justify-start items-center">
                         <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} /><span>People</span>
@@ -121,5 +121,4 @@ const Home = () => {
 export default Home;
 /*
 integrate hover card component on chats section taggging mechanism 
-
 */

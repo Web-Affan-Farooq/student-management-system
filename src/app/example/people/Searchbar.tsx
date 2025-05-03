@@ -1,8 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Check, ChevronsUpDown } from "lucide-react"
-
+import { Check,Search} from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -53,19 +52,19 @@ export default function ComboboxDemo() {
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select framework..."}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            : "Search"}
+          <Search className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
-        <Command className="bg-black">
-          <CommandInput placeholder="Search framework..." className="text-white" />
-          <CommandList>
-            <CommandEmpty>No framework found.</CommandEmpty>
-            <CommandGroup className="text-white">
+      <PopoverContent className="w-[200px] p-0"> 
+        <Command className="bg-black">{/*_____select container */}
+          <CommandInput placeholder="Search user ..." className="text-white" />
+          <CommandList > {/* ______ options */}
+            <CommandEmpty className="text-white">No user found ...</CommandEmpty> {/* _____ fallback message on select box  */}
+            <CommandGroup className="text-white"> {/* _______ selectable options group */}
               {frameworks.map((framework) => (
                 <CommandItem
-                  className=" "
+                  className=""
                   key={framework.value}
                   value={framework.value}
                   onSelect={(currentValue) => {
