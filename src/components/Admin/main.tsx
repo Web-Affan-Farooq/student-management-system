@@ -6,8 +6,6 @@ import { OptionContext } from '@/context/OptionContext';
 // import Sidebar from './sidebar';
 import Topnav from './Topnav';
 
-import Dashboard from './Dashboard/Dashboard';
-
 import { NavContext } from '@/context/Navcontext';
 import Link from 'next/link';
 import { clsx } from 'clsx';

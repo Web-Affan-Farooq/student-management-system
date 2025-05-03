@@ -16,6 +16,7 @@ import Chats from "../../../public/icons/Sidebar/Chats";
 import Events from "../../../public/icons/Sidebar/Events";
 import Announcements from "../../../public/icons/Sidebar/Announcements";
 import Settings from "../../../public/icons/Sidebar/Settings";
+import { AppWindowMac } from "lucide-react";
 
 const ManipulateLink = () => {
     const { updateSidebarVisibility } = useSidebarVisibility();
@@ -104,13 +105,19 @@ const Sidebar = () => {
         }
     }, []);
 
-
     return (
         //Sidebar
+        /*
+                        "w-[350px]": navStatus && windowSize > 768,  // size of nav on bigger screens
+            'w-[82vw] opacity-100': navStatus === true && windowSize <= 768,
+            'hidden': navStatus === false && windowSize <= 768,
+            'w-[75vw]': navStatus && windowSize <= 640,
+        */
         <div className={clsx(`scroll-container z-10 bg-black transition-all duration-400 ease-in-out py-[40px] px-[20px] w-[300px] text-white h-[100vh] overflow-y-scroll box-border rounded-2xl max-mid:absolute max-mid:top-0 max-mid:left-0 max-mid:w-[80vw] flex flex-col flex-nowrap gap-[20px]`, {
-            "-translate-x-[120vw]": windowSize < 950 && sidebarVisibility, // hide if small screen & sidebar is hidden
-            "translate-x-0": windowSize < 950 && !sidebarVisibility, // show if small screen & sidebar is visible
-
+            "":sidebarVisibility && windowSize > 950, // sidebar visible state but windowsize > 950
+            "":!sidebarVisibility && windowSize > 950, // sidebar visible state but windowsize > 950
+            "translate-x-0":sidebarVisibility && windowSize < 950, // sidebar visible state but windowsize > 950
+            "-translate-x-[120vw]":!sidebarVisibility && windowSize < 950, // sidebar visible state but windowsize > 950
         })}>
 
             {/** ___child-1 */}
