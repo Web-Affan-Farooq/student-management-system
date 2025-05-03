@@ -8,22 +8,23 @@ import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing important components ... */
 import Sidebar from "../Sidebar";
+import ComboboxDemo from "./Searchbar";
 
 /* Create dynamic users profile page with this design    https://dribbble.com/shots/17859331-Momentz-Social-Media-App */
 
 /* avatar  badge  tooltip*/
 const Card = () => {
     return (
-        <div className="flex items-center gap-4 px-[30px] py-3 bg-dark w-full rounded-md shadow-md border border-white/10">
+        <div className="flex items-center gap-4 md:px-[30px] py-2 w-full">
 
             {/* Profile Image */}
             <div className="flex-shrink-0">
-                <div className="rounded-full w-[60px] h-[60px] overflow-hidden border-2 border-white/20">
+                <div className="rounded-full w-[50px] h-[50px] overflow-hidden border-2 border-white/20">
                     <Image
                         src="/images/person-2.jpg"
                         alt="Muhammad Affan"
-                        width={100}
-                        height={100}
+                        width={90}
+                        height={90}
                         className="object-cover w-full h-full"
                     />
                 </div>
@@ -39,7 +40,7 @@ const Card = () => {
                 <span className="w-2 h-2 bg-green-400 rounded-full"></span>
                 </div> */}
                 <div className="relative flex flex-row flex-nowrap justify-center items-center gap-[10px] min-w-0 w-full">
-                    <h4 className="text-white text-md font-bold leading-tight truncate w-0 flex-grow">
+                    <h4 className="text-white text-[15px] font-bold leading-tight truncate w-0 flex-grow">
                         Mdfu ifuiods ff dsfidsopfi ad Affan
                     </h4>
                     <span className="w-2 h-2 bg-green-400 rounded-full"></span>
@@ -81,10 +82,22 @@ const Home = () => {
                 {/* Options Content */}
 
                 <div className="bg-black h-screen p-6 rounded-lg ">
-                    <h1 className="font-bold text-[25px] flex flex-row flex-nowrap justify-start items-center">
+                    <div className="flex flex-row max-sm:flex-col max-sm:items-start justify-between items-center">
+
+                        <div className="text-[25px] font-bold flex flex-row flex-nowrap justify-start items-center">
                         <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} /><span>People</span>
-                    </h1>
-                    <div className="border-2 border-solid border-white">
+                        </div>
+
+                        {/* <div>
+                            <label htmlFor="search user">
+                            <input type="text" name="searchProfile" id="search user" placeholder="Search .." className="text-[14px] md:text-[20px] bg-medium outline-none rounded-lg w-[300px] py-[7px] px-[15px]"/>
+                            </label>
+                        </div> */}
+                        <ComboboxDemo/>
+
+                    </div>
+                    <br /><br />
+                    <div className="flex flex-col gap-[8px]">
                         <Card />
                         <Card />
                         <Card />
