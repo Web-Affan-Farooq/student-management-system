@@ -42,7 +42,7 @@ const ManipulateLink = () => {
             },
             {
                 name: "Events",
-                link: "/example",
+                link: "/example/events",
                 icon: <Events className="group-hover:text-white text-gray-light" />
             },
             {
