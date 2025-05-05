@@ -59,13 +59,13 @@
   --color-gray-light:var(--gray-light);
   --color-pink-text:var(--pink-text);
   --color-pink:var(--pink);
-  --color-background:var(--background);
   --color-link:var(--link);
 
   --background-blue-gradient:var(--custom-gradient);
 
   --shadow-dark:0px 0px 90px 10px var(--link);
-  --shadow-sharp: 0px 0px 80px 15px var(--sharp);
+  --shadow-sharp-high: 0px 0px 80px 15px var(--sharp);
+  --shadow-sharp-medium: 0px 0px 80px 6px var(--sharp);
 
   --breakpoint-mid:950px;
 

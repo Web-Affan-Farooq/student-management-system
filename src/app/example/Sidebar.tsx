@@ -16,7 +16,6 @@ import Chats from "../../../public/icons/Sidebar/Chats";
 import Events from "../../../public/icons/Sidebar/Events";
 import Announcements from "../../../public/icons/Sidebar/Announcements";
 import Settings from "../../../public/icons/Sidebar/Settings";
-import { AppWindowMac } from "lucide-react";
 
 const ManipulateLink = () => {
     const { updateSidebarVisibility } = useSidebarVisibility();
@@ -73,7 +72,7 @@ const ManipulateLink = () => {
                             return <Link href={link.link} className='w-full' key={idx} onClick={() => {
                                 updateSidebarVisibility();
                             }}>
-                                <div className={`group transition-all duration-100 ease-in-out text-left p-3 bg-[rgba(34,33,54,0.9)] hover:bg-sharp hover:shadow-sharp rounded-lg text-[15px] font-bold`}>
+                                <div className={`group transition-all duration-100 ease-in-out text-left p-3 bg-[rgba(34,33,54,0.9)] hover:bg-sharp hover:shadow-sharp-high rounded-lg text-[15px] font-bold`}>
                                     <div className='flex flex-row flex-wrap gap-4 text-gray-400 items-center'>
                                         {link.icon}<span className='group-hover:text-white'>{link.name}</span>
                                     </div>
