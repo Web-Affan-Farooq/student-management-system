@@ -10,12 +10,12 @@ import { useEffect, useState } from "react";
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing custom icon components */
-import Book from "../../../public/icons/Sidebar/Book";
-import People from "../../../public/icons/Sidebar/People";
-import Chats from "../../../public/icons/Sidebar/Chats";
-import Events from "../../../public/icons/Sidebar/Events";
-import Announcements from "../../../public/icons/Sidebar/Announcements";
-import Settings from "../../../public/icons/Sidebar/Settings";
+import Book from "../../../public/icons/sidebar/Book";
+import People from "../../../public/icons/sidebar/People";
+import Chats from "../../../public/icons/sidebar/Chats";
+import Events from "../../../public/icons/sidebar/Events";
+import Announcements from "../../../public/icons/sidebar/Announcements";
+import Settings from "../../../public/icons/sidebar/Settings";
 
 const ManipulateLink = () => {
     const { updateSidebarVisibility } = useSidebarVisibility();

@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
 /* Importing sidebar visibility state */
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
