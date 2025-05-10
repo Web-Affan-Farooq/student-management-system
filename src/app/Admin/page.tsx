@@ -1,5 +1,7 @@
 "use client";
 
+import "./style.css";
+
 import React from "react";
 
 /* Importing sidebar visibility state */

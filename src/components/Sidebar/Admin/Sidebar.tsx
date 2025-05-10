@@ -1,6 +1,6 @@
 "use client";
-
-import "../style.css"
+ 
+import "../style.css";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
@@ -11,6 +11,7 @@ import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing custom icon components */
 import Book from "../../../../public/icons/sidebar/Book";
+import Degree from "../../../../public/icons/sidebar/Degree";
 import People from "../../../../public/icons/sidebar/People";
 import Chats from "../../../../public/icons/sidebar/Chats";
 import Events from "../../../../public/icons/sidebar/Events";
@@ -27,7 +28,7 @@ const ManipulateLink = () => {
             {
                 name: "Classrooms",
                 link: "/Admin/classes",
-                icon: <Book className="group-hover:text-white text-gray-light" />
+                icon: <Degree className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "People",
