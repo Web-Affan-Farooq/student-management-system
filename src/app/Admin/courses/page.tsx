@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing important components ... */
-import Sidebar from "../../../components/Sidebar/Admin/Sidebar";
+import Sidebar from "@/components/Sidebar/Admin/Sidebar";
 import Topnav from "../Topnav";
 import Plus from "../../../../public/icons/Plus";
 import Clock from "../../../../public/icons/Clock";
@@ -20,29 +20,29 @@ import Calender from "../../../../public/icons/Calender";
 
 /* avatar  badge  tooltip*/
 
-const Card = () => {
+const Card= () => {
     return (
-        <div className=" rounded-md p-[20px] relative flex flex-col flex-nowrap gap-[5px] tracking-[0.25px]">
-            <h2 className="w-[97%] font-bold text-pink-text">Physics</h2>
-            <p className="tracking-[0.25px]">Chapter-2 | Solenoid and Toroid</p>
-            <div className="flex flex-row flex-wrap justify-start items-center gap-[10px]">
-                
-                <div className="text-center text-gray-400 flex flex-row flex-nowrap justify-center items-center gap-[4px]">
-                    <Calender className="text-pink" size={{width:19,height:19}}/>
-                    <p className="text-[15px]">Saturday - Sunday</p>
-                </div>
-
-                <div className="text-center text-gray-400 flex flex-row flex-nowrap justify-center items-center gap-[4px]">
-                    <Clock className="text-pink" size={{width:19,height:19}}/>
-                    <p className="text-[15px] tracking-[0.25px]">Class timings</p>
-                </div>
-
+        <Link href={"/Admin/courses/1"}>
+                <div className="bg-medium rounded-2xl p-4 cursor-pointer sm:max-w-sm max-sm:w-[90vw] tracking-[0.25px]">
+            <h2 className="text-pink font-semibold text-xl mb-2">Physics</h2>
+            <p className="text-[15px] text-gray-600 text-sm mb-4">
+                Dive into the fundamentals of motion, energy, and matter in this engaging Physics course.
+            </p>
+            <div className="flex justify-between items-center text-sm text-gray-500">
+                <div className="flex flex-row flex-nowrap justify-center items-center gap-[6px] "><Clock size={
+                    {
+                        width:18,
+                        height:18,
+                    }
+                }/> 12 Weeks</div>
+                <span>👨‍🏫 John Doe</span>
             </div>
-
-            <Options className="absolute text-pink top-[40px] right-3" size={{width:20, height:20}}/>
         </div>
-    )
-}
+        </Link>
+    );
+};
+
+
 
 const Home = () => {
     const { sidebarVisibility, updateSidebarVisibility } = useSidebarVisibility();
@@ -70,14 +70,7 @@ const Home = () => {
                     </div>
                     
                     <br /><br />
-                    <div className="scroll-container flex flex-col gap-[15px]">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                    <div className="scroll-container grid sm:grid-cols-2 gap-[15px]">
                         <Card />
                         <Card />
                         <Card />

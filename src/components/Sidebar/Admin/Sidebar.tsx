@@ -31,6 +31,11 @@ const ManipulateLink = () => {
                 icon: <Degree className="group-hover:text-white text-gray-light" />
             },
             {
+                name: "Courses",
+                link: "/Admin/courses",
+                icon: <Book className="group-hover:text-white text-gray-light" />
+            },
+            {
                 name: "People",
                 link: "/Admin/people",
                 icon: <People className="group-hover:text-white text-gray-light" />
