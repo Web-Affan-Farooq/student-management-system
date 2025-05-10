@@ -6,7 +6,7 @@ import React from "react";
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing important components ... */
-import Sidebar from "./Sidebar";
+import Sidebar from "@/components/Sidebar/Teacher/Sidebar";
 import Topnav from "./Topnav";
 
 const Home = () => {

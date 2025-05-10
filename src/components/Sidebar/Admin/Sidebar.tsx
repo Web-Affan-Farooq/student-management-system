@@ -1,6 +1,6 @@
 "use client";
 
-import "./style.css"
+import "../style.css"
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
@@ -10,12 +10,12 @@ import { useEffect, useState } from "react";
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing custom icon components */
-import Book from "../../../public/icons/sidebar/Book";
-import People from "../../../public/icons/sidebar/People";
-import Chats from "../../../public/icons/sidebar/Chats";
-import Events from "../../../public/icons/sidebar/Events";
-import Announcements from "../../../public/icons/sidebar/Announcements";
-import Settings from "../../../public/icons/sidebar/Settings";
+import Book from "../../../../public/icons/sidebar/Book";
+import People from "../../../../public/icons/sidebar/People";
+import Chats from "../../../../public/icons/sidebar/Chats";
+import Events from "../../../../public/icons/sidebar/Events";
+import Announcements from "../../../../public/icons/sidebar/Announcements";
+import Settings from "../../../../public/icons/sidebar/Settings";
 
 const ManipulateLink = () => {
     const { updateSidebarVisibility } = useSidebarVisibility();
@@ -25,35 +25,35 @@ const ManipulateLink = () => {
     const links: any = {
         "Main menu": [
             {
-                name: "Coursework",
-                link: "/example",
+                name: "Classrooms",
+                link: "/Admin/classes",
                 icon: <Book className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "People",
-                link: "/example/people",
+                link: "/Admin/people",
                 icon: <People className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "Chats",
-                link: "/example",
+                link: "/Admin",
                 icon: <Chats className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "Events",
-                link: "/example/events",
+                link: "/Admin/events",
                 icon: <Events className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "Announcements",
-                link: "/example",
+                link: "/Admin",
                 icon: <Announcements className="group-hover:text-white text-gray-light" />
             },
         ],
         "Account": [
             {
                 name: "Settings",
-                link: "/example",
+                link: "/Admin",
                 icon: <Settings className="group-hover:text-white text-gray-light" />
             },
         ]
@@ -123,7 +123,7 @@ const Sidebar = () => {
             <div className='flex flex-row flex-nowrap gap-3'>
                 <div className='w-[45px] h-[45px] rounded-full bg-sharp'></div>
                 <div>
-                    <h1 className='text-white text-2xl font-bold'>Student Panel</h1>
+                    <h1 className='text-white text-2xl font-bold'>Admin Panel</h1>
                     <p className='text-[13px] text-pinktext'>Student management system</p>
                 </div>
             </div>

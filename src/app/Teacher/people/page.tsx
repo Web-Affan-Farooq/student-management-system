@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing important components ... */
-import Sidebar from "../Sidebar";
+import Sidebar from "@/components/Sidebar/Admin/Sidebar"
 import Card from "@/components/Teacher/People/Card";
 import Searchbar from "@/components/Teacher/People/Searchbar";
 import Topnav from "../Topnav";
@@ -17,7 +17,7 @@ import Topnav from "../Topnav";
 /* avatar  badge  tooltip*/
 
 const Home = () => {
-    const { sidebarVisibility, updateSidebarVisibility } = useSidebarVisibility();
+    const {sidebarVisibility, updateSidebarVisibility } = useSidebarVisibility();
 
     return (
         <div className="flex h-screen bg-dark text-white p-[5px]">
