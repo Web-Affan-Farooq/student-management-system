@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 
 /* Importing important components ... */
-import Sidebar from "../Sidebar";
+import Sidebar from "@/components/Sidebar/Teacher/Sidebar";
 import Topnav from "../Topnav";
 import Plus from "../../../../public/icons/Plus";
 
@@ -113,8 +113,21 @@ const Home = () => {
                 <Topnav/>
                 {/* Options Content */}
 
-                <div className="bg-black h-screen sm:p-6 rounded-lg max-sm:p-3">
-                    <div className="flex flex-row flex-wrap justify-between items-center">
+                <div className="scroll-container overflow-y-scroll bg-black h-screen sm:p-6 rounded-lg max-sm:p-3">
+
+                                        <div className="flex flex-row flex-wrap justify-between items-center">
+                    
+                                            <div className="font-bold flex flex-row flex-nowrap justify-start items-center">
+                                                <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} className="translate-y-[3px] max-md:w-[70px] max-sm:h-[70px]"/><span className="max-sm:text-[22px] sm:text-[22px] md:text-[25px]">Events</span>
+                                            </div>
+                    
+                                            <Link href={"/example/events/create"}>
+                                                <button type="button" className="bg-sharp px-[15px] py-[8px] rounded-md font-bold shadow-sharp-medium flex flex-row flex-nowrap justify-center items-center gap-1"><Plus />Create</button>
+                                            </Link>
+                                        </div>
+                    
+
+                    {/* <div className="flex flex-row flex-wrap justify-between items-center">
 
                         <div className="text-[25px] font-bold flex flex-row flex-nowrap justify-start items-center">
                             <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} /><span>Events</span>
@@ -123,9 +136,9 @@ const Home = () => {
                         <Link href={"/example/events/create"}>
                         <button type="button" className="bg-sharp px-[15px] py-[8px] rounded-md font-bold shadow-sharp-medium flex flex-row flex-nowrap justify-center items-center gap-1"><Plus/>Create Event</button>
                         </Link>
-                    </div>
+                    </div> */}
                     <br /><br />
-                    <div className="scroll-container flex flex-col gap-[8px] h-full overflow-y-scroll">
+                    <div className="flex flex-col gap-[8px] h-full">
                         <Card />
                         <Card />
                         <Card />

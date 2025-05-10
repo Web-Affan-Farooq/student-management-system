@@ -1,7 +1,6 @@
 "use client";
 
 import "../style.css";
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -69,6 +68,7 @@ const Home = () => {
                             <button type="button" className="bg-sharp px-[15px] py-[8px] rounded-md font-bold shadow-sharp-medium flex flex-row flex-nowrap justify-center items-center gap-1"><Plus />Create</button>
                         </Link>
                     </div>
+                    
                     <br /><br />
                     <div className="scroll-container flex flex-col gap-[15px]">
                         <Card />

@@ -26,34 +26,34 @@ const ManipulateLink = () => {
         "Main menu": [
             {
                 name: "Coursework",
-                link: "/example",
+                link: "/Teacher",
                 icon: <Book className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "People",
-                link: "/example/people",
+                link: "/Teacher/people",
                 icon: <People className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "Chats",
-                link: "/example",
+                link: "/Teacher",
                 icon: <Chats className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "Events",
-                link: "/example/events",
+                link: "/Teacher/events",
                 icon: <Events className="group-hover:text-white text-gray-light" />
             },
             {
                 name: "Announcements",
-                link: "/example",
+                link: "/Teacher",
                 icon: <Announcements className="group-hover:text-white text-gray-light" />
             },
         ],
         "Account": [
             {
                 name: "Settings",
-                link: "/example",
+                link: "/Teacher",
                 icon: <Settings className="group-hover:text-white text-gray-light" />
             },
         ]
@@ -135,7 +135,7 @@ const Sidebar = () => {
                 </div>
                 <div>
                     <h1 className='text-white text-[19px] font-bold'>Zake Foster</h1>
-                    <p className='text-[13px] text-gray-400'>Admin</p>
+                    <p className='text-[13px] text-gray-400'>Teacher</p>
                 </div>
             </div>
             <ManipulateLink />
