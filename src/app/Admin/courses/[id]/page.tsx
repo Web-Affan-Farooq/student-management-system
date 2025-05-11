@@ -3,7 +3,6 @@
 import "../../style.css";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 /* Importing sidebar visibility state */
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
@@ -11,16 +10,13 @@ import { useSidebarVisibility } from "@/stores/SidebarVisibility";
 /* Importing important components ... */
 import Sidebar from "../../../../components/Sidebar/Admin/Sidebar";
 import Topnav from "../../Topnav";
-import Plus from "../../../../../public/icons/Plus";
 import Clock from "../../../../../public/icons/Clock";
-import Options from "../../../../../public/icons/Options";
-import Calender from "../../../../../public/icons/Calender";
 
 /* Create dynamic users profile page with this design    https://dribbble.com/shots/17859331-Momentz-Social-Media-App */
 
 /* avatar  badge  tooltip*/
 
-const Card= () => {
+const Card = () => {
     return (
         <div className="bg-medium rounded-2xl p-4 cursor-pointer sm:max-w-sm max-sm:w-[90vw] tracking-[0.25px]">
             <h2 className="text-pink font-semibold text-xl mb-2">Physics</h2>
