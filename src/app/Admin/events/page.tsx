@@ -113,7 +113,7 @@ const Home = () => {
                 <Topnav/>
                 {/* Options Content */}
 
-                <div className="scroll-container overflow-y-scroll bg-black h-screen sm:p-6 rounded-lg max-sm:p-3">
+                <div className="scroll-container overflow-y-scroll bg-black h-[90vh] max-sm:h-[80vh] sm:p-6 rounded-lg max-sm:p-3">
 
                                         <div className="flex flex-row flex-wrap justify-between items-center">
                     
@@ -137,8 +137,8 @@ const Home = () => {
                         <button type="button" className="bg-sharp px-[15px] py-[8px] rounded-md font-bold shadow-sharp-medium flex flex-row flex-nowrap justify-center items-center gap-1"><Plus/>Create Event</button>
                         </Link>
                     </div> */}
-                    <br /><br />
-                    <div className="flex flex-col gap-[8px] h-full">
+                    <br />
+                    <div className="flex flex-col gap-[15px]">
                         <Card />
                         <Card />
                         <Card />

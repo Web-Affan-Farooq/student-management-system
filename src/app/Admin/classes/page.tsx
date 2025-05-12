@@ -28,12 +28,12 @@ const Card = () => {
             <div className="flex flex-row flex-wrap justify-start items-center gap-[10px]">
                 
                 <div className="text-center text-gray-400 flex flex-row flex-nowrap justify-center items-center gap-[4px]">
-                    <Calender className="text-pink" size={{width:19,height:19}}/>
+                    <Calender className="text-pink" size={{width:17,height:17}}/>
                     <p className="text-[15px]">Saturday - Sunday</p>
                 </div>
 
                 <div className="text-center text-gray-400 flex flex-row flex-nowrap justify-center items-center gap-[4px]">
-                    <Clock className="text-pink" size={{width:19,height:19}}/>
+                    <Clock className="text-pink" size={{width:17,height:17}}/>
                     <p className="text-[15px] tracking-[0.25px]">Class timings</p>
                 </div>
 
@@ -61,7 +61,7 @@ const Home = () => {
                     <div className="flex flex-row flex-wrap justify-between items-center">
 
                         <div className="font-bold flex flex-row flex-nowrap justify-start items-center">
-                            <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} className="translate-y-[3px] max-md:w-[70px] max-sm:h-[70px]"/><span className="max-sm:text-[22px] sm:text-[22px] md:text-[25px]">Courses </span>
+                            <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} className="translate-y-[3px] max-md:w-[70px] max-sm:h-[70px]"/><span className="max-sm:text-[22px] sm:text-[22px] md:text-[25px]">Classes</span>
                         </div>
 
                         <Link href={"/Admin/create"}>
@@ -70,7 +70,7 @@ const Home = () => {
                     </div>
                     
                     <br /><br />
-                    <div className="scroll-container flex flex-col gap-[15px]">
+                    <div className="scroll-container flex flex-col gap-[15px] h-[70vh]">
                         <Card />
                         <Card />
                         <Card />

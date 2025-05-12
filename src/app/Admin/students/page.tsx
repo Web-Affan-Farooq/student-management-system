@@ -34,7 +34,7 @@ const Home = () => {
                     <div className="flex flex-row flex-wrap justify-between items-center">
 
                         <div className="font-bold flex flex-row flex-nowrap justify-start items-center">
-                            <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} className="translate-y-[3px] max-md:w-[70px] max-sm:h-[70px]" /><span className="max-sm:text-[22px] sm:text-[22px] md:text-[25px]">People</span>
+                            <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} className="translate-y-[3px] max-md:w-[70px] max-sm:h-[70px]" /><span className="max-sm:text-[22px] sm:text-[22px] md:text-[25px]">Students</span>
                         </div>
                         <Searchbar />
 
@@ -47,7 +47,7 @@ const Home = () => {
                         <Searchbar />
                     </div> */}
                     <br /><br />
-                    <div className="flex flex-col gap-[8px] h-full ">
+                    <div className="flex flex-col gap-[8px] h-[70vh]">
                         <Card />
                         <Card />
                         <Card />
