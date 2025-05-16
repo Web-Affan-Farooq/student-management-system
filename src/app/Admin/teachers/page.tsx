@@ -29,7 +29,7 @@ const Home = () => {
                 <Topnav />
                 {/* Options Content */}
 
-                <div className="scroll-container overflow-y-scroll bg-black h-screen p-6 rounded-lg ">
+                <div className="scroll-container overflow-y-scroll bg-black h-[90vh] p-6 rounded-lg ">
 
                     <div className="flex flex-row flex-wrap justify-between items-center">
 

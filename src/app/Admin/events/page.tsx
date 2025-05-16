@@ -113,7 +113,7 @@ const Home = () => {
                 <Topnav/>
                 {/* Options Content */}
 
-                <div className="scroll-container overflow-y-scroll bg-black h-[90vh] max-sm:h-[80vh] sm:p-6 rounded-lg max-sm:p-3">
+                <div className="scroll-container overflow-y-scroll bg-black h-[90vh] max-sm:h-[90vh] sm:p-6 rounded-lg max-sm:p-3">
 
                                         <div className="flex flex-row flex-wrap justify-between items-center">
                     
@@ -121,7 +121,7 @@ const Home = () => {
                                                 <Image src="/icons/glass-icons/people.svg" alt="people" width={90} height={90} className="translate-y-[3px] max-md:w-[70px] max-sm:h-[70px]"/><span className="max-sm:text-[22px] sm:text-[22px] md:text-[25px]">Events</span>
                                             </div>
                     
-                                            <Link href={"/example/events/create"}>
+                                            <Link href={"/Admin/events/create"}>
                                                 <button type="button" className="bg-sharp px-[15px] py-[8px] rounded-md font-bold shadow-sharp-medium flex flex-row flex-nowrap justify-center items-center gap-1"><Plus />Create</button>
                                             </Link>
                                         </div>
