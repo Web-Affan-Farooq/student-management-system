@@ -1,0 +1,6 @@
+.custom-date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
