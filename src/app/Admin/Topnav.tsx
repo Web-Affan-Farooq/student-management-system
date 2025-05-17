@@ -12,7 +12,7 @@ const Topnav = () => {
     const { sidebarVisibility, updateSidebarVisibility } = useSidebarVisibility();
 
     return (
-        <div className="bg-black p-3 rounded-lg py-[20px] text-gray-400 flex flex-nowrap justify-between items-center relative top-4 ">
+        <div className="bg-black p-3 rounded-lg py-[24px] text-gray-400 flex flex-nowrap justify-between items-center relative top-4 ">
             <h1 className="text-gray-400 font-bold text-[20px]">Top nav</h1>
             <div className="flex flex-row flex-nowrap gap-4 ">
                 <div className='relative'>
@@ -39,13 +39,13 @@ const Topnav = () => {
                     <span className='absolute top-[9px] left-[14px] right-0 bg-pink w-[15px] h-[15px] text-[11px] text-black text-center rounded-full'>{3}</span>
                 </div>
                 <div className='max-mid:block hidden'>
-                                    {
-                    sidebarVisibility ? <Menucross onClick={() => {
-                        updateSidebarVisibility();
-                    }} /> : <Menubar onClick={() => {
-                        updateSidebarVisibility();
-                    }} />
-                }
+                    {
+                        sidebarVisibility ? <Menucross onClick={() => {
+                            updateSidebarVisibility();
+                        }} /> : <Menubar onClick={() => {
+                            updateSidebarVisibility();
+                        }} />
+                    }
                 </div>
             </div>
         </div>
