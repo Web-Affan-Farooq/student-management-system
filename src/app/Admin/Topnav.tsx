@@ -1,7 +1,6 @@
 "use client";
 import React from 'react'
 import { useSidebarVisibility } from '@/stores/SidebarVisibility';
-
 import Folder from '../../../public/icons/Topnav/Folder';
 import Messages from '../../../public/icons/Topnav/Messages';
 import Notification from '../../../public/icons/Topnav/Notification';
@@ -12,9 +11,9 @@ const Topnav = () => {
     const { sidebarVisibility, updateSidebarVisibility } = useSidebarVisibility();
 
     return (
-        <div className="bg-black p-3 rounded-lg py-[24px] text-gray-400 flex flex-nowrap justify-between items-center relative top-4 ">
+        <div className="bg-black border-2 p-3 rounded-lg py-[19px] text-gray-400 flex flex-nowrap justify-between items-center relative top-4 ">
             <h1 className="text-gray-400 font-bold text-[20px]">Top nav</h1>
-            <div className="flex flex-row flex-nowrap gap-4 ">
+            <div className="flex flex-row flex-nowrap gap-4">
                 <div className='relative'>
                     <Folder className='text-pink-text' size={{
                         width: 19,
