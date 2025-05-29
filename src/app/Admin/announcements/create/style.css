@@ -4,3 +4,21 @@
     position: relative;
     z-index: 1;
 }
+.custom-date::-moz-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.custom-date::-ms-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.custom-date::-o-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}

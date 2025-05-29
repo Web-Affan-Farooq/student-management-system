@@ -28,7 +28,7 @@ const Home = () => {
                 <Topnav/>
                 {/* Options Content */}
 
-                <div className="scroll-container bg-black overflow-y-scroll border-2 h-[85vh] sm:p-6 rounded-lg max-sm:p-3">
+                <div className="scroll-container bg-black overflow-y-scroll border-2 h-[85vh] sm:p-6 rounded-lg max-sm:p-0">
                     <CreateAnnouncementsForm/>
                 </div>
             </main>
