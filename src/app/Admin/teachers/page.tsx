@@ -23,13 +23,13 @@ const Home = () => {
         <div className="flex h-screen bg-dark text-white p-[5px]">
             <Sidebar />
             {/* Main content area */}
-            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-4 p-2 sm:p-4">
+            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-[30px] p-2 sm:p-4">
                 {/* Top Bar */}
                 {/*max-[920px]:absolute max-[920px]:right-5 max-[920px]:top-4 */}
                 <Topnav />
                 {/* Options Content */}
 
-                <div className="scroll-container overflow-y-scroll bg-black h-[90vh] p-6 rounded-lg ">
+                <div className="scroll-container border-2 overflow-y-scroll bg-black h-[85vh] p-6 rounded-lg ">
 
                     <div className="flex flex-row flex-wrap justify-between items-center">
 

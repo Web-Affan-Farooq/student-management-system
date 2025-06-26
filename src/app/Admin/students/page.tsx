@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 /* Importing sidebar visibility state */
 import { useSidebarVisibility } from "@/stores/SidebarVisibility";
@@ -23,13 +24,13 @@ const Home = () => {
         <div className="flex h-screen bg-dark text-white p-[5px]">
             <Sidebar />
             {/* Main content area */}
-            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-4 p-2 sm:p-4">
+            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-[30px] p-2 sm:p-4">
                 {/* Top Bar */}
                 {/*max-[920px]:absolute max-[920px]:right-5 max-[920px]:top-4 */}
                 <Topnav />
                 {/* Options Content */}
 
-                <div className="scroll-container overflow-y-scroll bg-black h-[90vh] p-6 rounded-lg ">
+                <div className="scroll-container overflow-y-scroll bg-black border-2 h-[85vh] p-6 rounded-lg ">
 
                     <div className="flex flex-row flex-wrap justify-between items-center">
 
@@ -48,25 +49,39 @@ const Home = () => {
                     </div> */}
                     <br /><br />
                     <div className="flex flex-col gap-[8px] h-[70vh]">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
+                        <Link href={"/Admin/students/1"}>
+                            <Card />
+                        </Link>
                     </div>
 
                 </div>

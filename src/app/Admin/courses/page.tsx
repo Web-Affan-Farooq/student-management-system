@@ -58,13 +58,13 @@ const Home = () => {
         <div className="flex h-screen bg-dark text-white p-[5px]">
             <Sidebar />
             {/* Main content area */}
-            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-4 p-1 sm:p-4">
+            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-[30px] p-1 sm:p-4">
                 {/* Top Bar */}
                 {/*max-[920px]:absolute max-[920px]:right-5 max-[920px]:top-4 */}
                 <Topnav />
                 {/* Options Content */}
 
-                <div className="scroll-container bg-black h-[90vh] max-sm:h-[91vh] rounded-lg overflow-y-scroll">
+                <div className="scroll-container bg-black h-[85vh] border-2 max-sm:h-[91vh] rounded-lg overflow-y-scroll">
 
                     <div className="flex flex-row flex-wrap justify-between items-center sm:p-6 max-sm:p-3">
 
@@ -79,6 +79,16 @@ const Home = () => {
                     
                     <br /><br />
                     <div className="grid sm:grid-cols-2 gap-[15px] h-auto px-[9px]">
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
                         <Card />
                         <Card />
                         <Card />

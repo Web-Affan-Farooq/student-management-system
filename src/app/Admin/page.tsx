@@ -18,7 +18,7 @@ const Home = () => {
     <div className="flex h-screen bg-dark text-white p-[5px]">
       <Sidebar />
       {/* Main content area */}
-      <main className="flex-1 grid grid-rows-[auto_1fr] gap-4 p-2 sm:p-4">
+      <main className="flex-1 grid grid-rows-[auto_1fr] gap-[30px] p-2 sm:p-4">
         {/* Top Bar */}
         {/*max-[920px]:absolute max-[920px]:right-5 max-[920px]:top-4 */}
         <Topnav/>

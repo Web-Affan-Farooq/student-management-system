@@ -2,7 +2,7 @@ import React from 'react';
 import { Checkbox } from "@/components/ui/checkbox"
 
 
-const CreateEventForm = () => {
+const CreateCourseForm = () => {
     return (
         <main className='flex h-auto bg-dark text-white p-[5px]'>
             <div>
@@ -59,8 +59,8 @@ const CreateEventForm = () => {
                     <div className='p-[20px]'>
                         <label htmlFor="Helper teachers (if any)" className='text-[15px] text-gray-400' id='course-helper-teachers'>Helper teachers (if any) </label>
 
-<br />
-<br />
+                        <br />
+                        <br />
                         <div className='px-[20px] flex flex-col flex-nowrap gap-[10px]'>
 
                             <div className='flex flex-row flex-nowrap justify-start items-center gap-[10px]'>
@@ -75,19 +75,19 @@ const CreateEventForm = () => {
                             <div className='flex flex-row flex-nowrap justify-start items-center gap-[10px]'>
                                 <Checkbox className='border-none bg-medium' /><label htmlFor="select Teacher name to be helper" className='text-pink-text'>Teacher name</label>
                             </div>
-                            
+
                         </div>
                     </div>
- 
-<br />
+
+                    <br />
                     <div className='px-[30px]'>
                         <button type="submit" className="bg-sharp px-[20px] py-[7px] rounded-md font-bold transition-background duration-200 ease-in-out hover:shadow-sharp-medium">Create course </button>
                     </div>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 </form>
             </div>
         </main>
     )
 }
 
-export default CreateEventForm
+export default CreateCourseForm;

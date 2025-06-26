@@ -67,7 +67,7 @@ const Home = () => {
         <div className="flex h-screen bg-dark text-white p-[5px]">
             <Sidebar />
             {/* Main content area */}
-            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-4 p-2 sm:p-0">
+            <main className="flex-1 h-[100vh] grid grid-rows-[auto_1fr] gap-[30px] p-2 sm:p-0">
                 {/* Top Bar */}
                 {/*max-[920px]:absolute max-[920px]:right-5 max-[920px]:top-4 */}
                 <Topnav />
@@ -86,42 +86,42 @@ const Home = () => {
                         <h1 className="px-[10px] font-bold text-gray-400 text-[20px] tracking-[0.25px]">People</h1>
                     </div>
                     <br />
-<>
-<div className="flex flex-row flex-wrap justify-start items-center gap-[10px]">
-    <>
-  <div className="relative flex items-center gap-3 px-4 py-2 bg-medium rounded-lg shadow-md w-fit">
-    {/* People Icon */}
-    <div className="relative">
-      <Degree className="text-pink" size={{ width: 24, height: 24 }} />
-      {/* Notification Badge */}
-      <span className="absolute -top-2 -right-2 bg-link w-[20px] h-[20px] rounded-full text-[11px] text-white font-medium flex items-center justify-center shadow">
-        2
-      </span>
-    </div>
+                    <>
+                        <div className="flex flex-row flex-wrap justify-start items-center gap-[10px]">
+                            <>
+                                <div className="relative flex items-center gap-3 px-4 py-2 bg-medium rounded-lg shadow-md w-fit">
+                                    {/* People Icon */}
+                                    <div className="relative">
+                                        <Degree className="text-pink" size={{ width: 24, height: 24 }} />
+                                        {/* Notification Badge */}
+                                        <span className="absolute -top-2 -right-2 bg-link w-[20px] h-[20px] rounded-full text-[11px] text-white font-medium flex items-center justify-center shadow">
+                                            2
+                                        </span>
+                                    </div>
 
-    {/* Title */}
-    <h2 className="text-[20px] font-bold text-white">Assigned Teachers</h2>
-  </div>
-</>
+                                    {/* Title */}
+                                    <h2 className="text-[20px] font-bold text-white">Assigned Teachers</h2>
+                                </div>
+                            </>
 
-<>
-  <div className="relative flex items-center gap-3 px-4 py-2 bg-medium rounded-lg shadow-md w-fit">
-    {/* People Icon */}
-    <div className="relative">
-      <People className="text-pink" size={{ width: 24, height: 24 }} />
-      {/* Notification Badge */}
-      <span className="absolute -top-2 -right-2 bg-link w-[20px] h-[20px] rounded-full text-[11px] text-white font-medium flex items-center justify-center shadow">
-        20
-      </span>
-    </div>
+                            <>
+                                <div className="relative flex items-center gap-3 px-4 py-2 bg-medium rounded-lg shadow-md w-fit">
+                                    {/* People Icon */}
+                                    <div className="relative">
+                                        <People className="text-pink" size={{ width: 24, height: 24 }} />
+                                        {/* Notification Badge */}
+                                        <span className="absolute -top-2 -right-2 bg-link w-[20px] h-[20px] rounded-full text-[11px] text-white font-medium flex items-center justify-center shadow">
+                                            20
+                                        </span>
+                                    </div>
 
-    {/* Title */}
-    <h2 className="text-[20px] font-bold text-white">Enrolled Students</h2>
-  </div>
-</>
-</div>
+                                    {/* Title */}
+                                    <h2 className="text-[20px] font-bold text-white">Enrolled Students</h2>
+                                </div>
+                            </>
+                        </div>
 
-</>
+                    </>
 
 
                     <br /><br />

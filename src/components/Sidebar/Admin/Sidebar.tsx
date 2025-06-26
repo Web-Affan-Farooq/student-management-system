@@ -57,7 +57,7 @@ const ManipulateLink = () => {
             },
             {
                 name: "Announcements",
-                link: "/Admin",
+                link: "/Admin/announcements",
                 icon: <Announcements className="group-hover:text-white text-gray-light" />
             },
         ],

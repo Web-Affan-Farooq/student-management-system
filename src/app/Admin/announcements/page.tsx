@@ -32,7 +32,6 @@ const Card = () => {
                 </div>
             </div>
 
-            {/* <Options className="absolute text-pink top-[40px] right-3" size={{width:20, height:20}}/> */}
         </div>
     )
 }
